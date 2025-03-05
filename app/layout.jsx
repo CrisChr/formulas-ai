@@ -1,9 +1,9 @@
-
 import { Footer } from "../components/Footer.jsx";
 import { Header } from "../components/Header.jsx";
 import { Inter as FontSans } from "next/font/google"
 import { cn } from "../lib/utils"
 import { I18nProvider } from './i18n'
+import { Analytics } from "@vercel/analytics/react"
 import "../styles/globals.css";
 import "../styles/loading.css";
 
@@ -30,7 +30,10 @@ export default function RootLayout({ children }) {
         <I18nProvider>
           <Header />
           <div className="flex max-full mx-auto flex-col justify-center py-0 min-h-screen">
-            <main className="flex-1 flex justify-center">{children}</main>
+            <main className="flex-1 flex justify-center">
+              {children}
+              <Analytics />
+            </main>
             <Footer />
           </div>
         </I18nProvider>
