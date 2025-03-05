@@ -26,7 +26,7 @@ export function SettingsDrawer({ isOpen, onClose }) {
 
     // 检查是否只包含合法字符（字母、数字和特定符号）
     const validKeyPattern = /^[A-Za-z0-9_-]+$/;
-    if (!validKeyPattern.test(key)) {
+    if (!validKeyPattern.test(key) && !!key.length) {
       toast.error(t('settings.apiKeyFormatError') || 'API Key包含非法字符');
       return false;
     }
@@ -38,9 +38,6 @@ export function SettingsDrawer({ isOpen, onClose }) {
       setDeepseekApiKey(apiKey);
       toast.success(t('settings.apiKeySaveSuccess') || 'API Key保存成功');
       onClose();
-    } else {
-      toast.error(t('settings.apiKeySaveError') || '保存API Key失败');
-      return;
     }
   };
 

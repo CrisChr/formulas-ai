@@ -2,10 +2,10 @@
 import { Footer } from "../components/Footer.jsx";
 import { Header } from "../components/Header.jsx";
 import { Inter as FontSans } from "next/font/google"
-import { cn } from "lib/utils"
+import { cn } from "../lib/utils"
 import { I18nProvider } from './i18n'
-import "styles/globals.css";
-import "styles/loading.css";
+import "../styles/globals.css";
+import "../styles/loading.css";
 
 export const metadata = {
   title: "Formulas AI",
