@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "Excel Inteligente",
+    "heading": "Usar AI para generar fórmulas de Excel",
+    "description": "Describa qué fórmulas de Excel desea",
+    "placeholder": "ej: Identificar género basado en DNI",
+    "generate": "Generar",
+    "formula": "La fórmula que necesitas",
+    "footer": "©2025 Todos los derechos reservados"
+  },
+  "settings": {
+    "title": "Configuración",
+    "deepseekApiKey": "DeepSeek API Key",
+    "enterApiKey": "Ingrese su clave API",
+    "apiKeyDescription": "Por razones de seguridad, la clave API solo se almacenará en la memoria y deberá volver a ingresarla después de actualizar la página.",
+    "save": "Guardar",
+    "apiKeyEmpty": "Por favor, ingrese su clave de API de DeepSeek en la configuración ubicada en la esquina superior derecha.",
+    "emptyFormula": "Ingrese la fórmula que necesita generar.",
+    "apiKeyFormatError": "La clave API contiene caracteres no válidos.",
+    "apiKeySaveSuccess": "La clave API se guardó correctamente."
+  }
+}

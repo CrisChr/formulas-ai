@@ -1,0 +1,23 @@
+{
+  "app": {
+    "title": "Smart Excel",
+    "heading": "Generate Excel formulas using AI",
+    "description": "Describe what Excel formulas you would like:",
+    "placeholder": "e.g. Identify gender based on ID card",
+    "generate": "Generate",
+    "formula": "The formula you need",
+    "footer": "©2025 All rights reserved",
+    "enterFormulaError": "Please enter the formula you need to generate."
+  },
+  "settings": {
+    "title": "Settings",
+    "deepseekApiKey": "DeepSeek API Key",
+    "enterApiKey": "Enter your API Key",
+    "apiKeyDescription": "Your API Key will only be stored in memory for security and will need to be re-entered after page refresh.",
+    "save": "Save",
+    "apiKeyEmpty": "Please enter your API Key in the settings first.",
+    "emptyFormula": "Please enter the formula you need to generate.",
+    "apiKeyFormatError": "The API Key contains illegal characters.",
+    "apiKeySaveSuccess": "The API Key was saved successfully."
+  }
+}

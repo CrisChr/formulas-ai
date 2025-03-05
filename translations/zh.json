@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "智能Excel",
+    "heading": "使用AI生成Excel公式",
+    "description": "描述您想要的Excel公式：",
+    "placeholder": "例如：根据身份证号识别性别",
+    "generate": "生成",
+    "formula": "您需要的公式是：",
+    "footer": "©2025 版权所有"
+  },
+  "settings": {
+    "title": "配置",
+    "deepseekApiKey": "DeepSeek API Key",
+    "enterApiKey": "请输入您的DeepSeek API Key",
+    "apiKeyDescription": "出于安全考虑，您的API Key只会保存在内存中，刷新页面后需重新输入。",
+    "save": "保存",
+    "emptyFormula": "请描述您想要的Excel公式。",
+    "apiKeyEmpty": "请在右上角的设置里输入您的DeepSeek API Key。",
+    "apiKeyFormatError": "API Key包含非法字符。",
+    "apiKeySaveSuccess": "API Key保存成功。"
+  }
+}
