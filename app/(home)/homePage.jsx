@@ -8,6 +8,7 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useI18n } from "../i18n";
 import { useApiStore } from "../../store";
+import "../../styles/markdown.css";
 
 export default function HomePage() {
   const [content, setContent] = useState("");
@@ -122,7 +123,28 @@ export default function HomePage() {
                 className="overflow-y-auto bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition border dark:border-gray-700 w-full"
               >
                 <div className="whitespace-pre-wrap text-left text-sm sm:text-base dark:text-gray-200">
-                  <Markdown remarkPlugins={[remarkGfm]}>{answer}</Markdown>
+                  {/* <Markdown remarkPlugins={[remarkGfm]}>{answer}</Markdown> */}
+                  <Markdown 
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      code({node, inline, className, children, ...props}) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                          <pre className={`language-${match[1]}`}>
+                            <code className={className} {...props}>
+                              {children}
+                            </code>
+                          </pre>
+                        ) : (
+                          <code className={className} {...props}>
+                            {children}
+                          </code>
+                        )
+                      }
+                    }}
+                  >
+                    {answer}
+                  </Markdown>
                 </div>
               </div>
             </div>
