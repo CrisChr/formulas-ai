@@ -13,7 +13,7 @@
     "title": "Settings",
     "deepseekApiKey": "DeepSeek API Key",
     "enterApiKey": "Enter your API Key",
-    "apiKeyDescription": "Your API Key will only be stored in memory for security and will need to be re-entered after page refresh.",
+    "apiKeyDescription": "We will not upload your Key. The Key just only be stored in memory, and you will need to re-enter it after refreshing the page.",
     "save": "Save",
     "apiKeyEmpty": "Please enter your API Key in the settings first.",
     "emptyFormula": "Please enter the formula you need to generate.",

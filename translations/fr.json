@@ -12,7 +12,7 @@
     "title": "Configuration",
     "deepseekApiKey": "DeepSeek API Key",
     "enterApiKey": "Entrez votre clé API",
-    "apiKeyDescription": "Pour des raisons de sécurité, la clé API sera uniquement stockée en mémoire et devra être réentrée après l'actualisation de la page.",
+    "apiKeyDescription": "Nous ne téléchargerons pas votre clé. La clé sera uniquement conservée en mémoire et devra être réentrée après l'actualisation de la page.",
     "save": "Enregistrer",
     "apiKeyEmpty": "Veuillez entrer votre clé API DeepSeek dans les paramètres situés en haut à droite.",
     "emptyFormula": "Veuillez entrer la formule que vous souhaitez générer.",

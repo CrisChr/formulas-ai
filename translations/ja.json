@@ -12,7 +12,7 @@
     "title": "設定",
     "deepseekApiKey": "DeepSeek API Key",
     "enterApiKey": "APIキーを入力してください",
-    "apiKeyDescription": "セキュリティ上の理由から、APIキーはメモリ内にのみ保存され、ページの更新後に再入力が必要です",
+    "apiKeyDescription": "私たちはあなたのキーをアップロードしません。キーはメモリ内にのみ保存され、ページを更新した後は再入力が必要です。",
     "save": "保存",
     "apiKeyEmpty": "右上の設定からDeepSeek APIキーを入力してください。",
     "emptyFormula": "生成する数式を入力してください。",

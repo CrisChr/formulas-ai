@@ -12,7 +12,7 @@
     "title": "配置",
     "deepseekApiKey": "DeepSeek API Key",
     "enterApiKey": "请输入您的DeepSeek API Key",
-    "apiKeyDescription": "出于安全考虑，您的API Key只会保存在内存中，刷新页面后需重新输入。",
+    "apiKeyDescription": "我们不会上传您的Key，Key只会保存在内存中，刷新页面后需重新输入。",
     "save": "保存",
     "emptyFormula": "请描述您想要的Excel公式。",
     "apiKeyEmpty": "请在右上角的设置里输入您的DeepSeek API Key。",
