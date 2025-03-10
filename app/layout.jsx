@@ -5,6 +5,7 @@ import { cn } from "../lib/utils"
 import { I18nProvider } from './i18n'
 import { Analytics } from "@vercel/analytics/react"
 import Script from "next/script";
+import { BuyMeCoffee } from "../components/BuyMeCoffee.jsx";
 import "../styles/globals.css";
 import "../styles/loading.css";
 
@@ -99,6 +100,7 @@ export default function RootLayout({ children }) {
             </main>
             <Footer />
           </div>
+          <BuyMeCoffee />
         </I18nProvider>
       </body>
     </html>
