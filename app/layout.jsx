@@ -86,6 +86,7 @@ export default function RootLayout({ children }) {
             })
           }}
         />
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossorigin="anonymous"></Script>
       </head>
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
