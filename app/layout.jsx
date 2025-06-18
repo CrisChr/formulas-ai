@@ -62,6 +62,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-8598116000817169"></meta>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossorigin="anonymous"></Script>
         {/* 添加结构化数据 */}
         <Script
           id="schema-structured-data"
@@ -86,7 +88,6 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossorigin="anonymous"></Script>
       </head>
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
