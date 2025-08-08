@@ -9,6 +9,9 @@
     "footer": "©2025 All rights reserved",
     "enterFormulaError": "Please enter the formula you need to generate."
   },
+  "userGuide": {
+    "addApiKey": "Please add your API Key in the settings to use all features."
+  },
   "settings": {
     "title": "Settings",
     "deepseekApiKey": "DeepSeek API Key",

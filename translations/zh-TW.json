@@ -8,6 +8,9 @@
     "formula": "您需要的公式",
     "footer": "©2025 版權所有"
   },
+  "userGuide": {
+    "addApiKey": "請在設置中添加您的API密鑰以使用所有功能。"
+  },
   "settings": {
     "title": "配置",
     "deepseekApiKey": "DeepSeek API Key",

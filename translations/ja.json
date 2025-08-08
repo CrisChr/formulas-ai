@@ -8,6 +8,9 @@
     "formula": "必要な数式",
     "footer": "©2025 全著作権所有"
   },
+  "userGuide": {
+    "addApiKey": "すべての機能を使用するには、設定でAPIキーを追加してください。"
+  },
   "settings": {
     "title": "設定",
     "deepseekApiKey": "DeepSeek API Key",

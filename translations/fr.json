@@ -8,6 +8,9 @@
     "formula": "La formule que vous avez besoin",
     "footer": "©2025 Tous droits réservés"
   },
+  "userGuide": {
+    "addApiKey": "Veuillez ajouter votre clé API dans les paramètres pour utiliser toutes les fonctionnalités."
+  },
   "settings": {
     "title": "Configuration",
     "deepseekApiKey": "DeepSeek API Key",

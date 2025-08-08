@@ -6,11 +6,28 @@ import { useI18n } from "../app/i18n";
 import { Settings } from "lucide-react";
 import { SettingsDrawer } from "./SettingDrawer";
 import { Sun, Moon } from 'lucide-react';
+import { useApiStore } from "../store";
+import { UserGuide } from "./UserGuide";
 
 export function Header() {
   const { locale, setLocale, t } = useI18n()
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [theme, setTheme] = useState('light');
+  const { deepSeekApiKey } = useApiStore();
+  const [showUserGuide, setShowUserGuide] = useState(false);
+
+  useEffect(() => {
+    // 仅在客户端执行
+    if (typeof window !== 'undefined') {
+      // 如果没有API key，则显示引导
+      if (!deepSeekApiKey) {
+        setShowUserGuide(true);
+      } else {
+        // 如果有API key，则隐藏引导
+        setShowUserGuide(false);
+      }
+    }
+  }, [deepSeekApiKey]);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -59,6 +76,8 @@ export function Header() {
           </button>
         </div>
       </header>
+
+      {showUserGuide && <UserGuide onClose={() => setShowUserGuide(false)} />}
 
       <SettingsDrawer
         isOpen={isSettingsOpen}
