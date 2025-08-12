@@ -29,7 +29,7 @@ export default function HomePage() {
     body: {
       language: locale,
       prompt: content,
-      apiKey: CryptoJs.AES.encrypt(deepSeekApiKey, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY).toString(),
+      key: CryptoJs.AES.encrypt(deepSeekApiKey, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY).toString(),
     },
     onResponse: (res) => {
       if (res.status === 429) {
