@@ -8,6 +8,7 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useI18n } from "../i18n";
 import { useApiStore } from "../../store";
+import CryptoJs from 'crypto-js';
 import "../../styles/markdown.css";
 
 export default function HomePage() {
@@ -28,7 +29,7 @@ export default function HomePage() {
     body: {
       language: locale,
       prompt: content,
-      apiKey: deepSeekApiKey
+      apiKey: CryptoJs.AES.encrypt(deepSeekApiKey, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY).toString(),
     },
     onResponse: (res) => {
       if (res.status === 429) {
