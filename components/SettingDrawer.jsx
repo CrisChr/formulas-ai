@@ -26,7 +26,7 @@ export function SettingsDrawer({ isOpen, onClose }) {
 
     // 检查是否只包含合法字符（字母、数字和特定符号）
     const validKeyPattern = /^[A-Za-z0-9_-]+$/;
-    if (!validKeyPattern.test(key) && !!key.length && !apiKey.startsWith('sk-')) {
+    if (!validKeyPattern.test(key) && !!key.length && !apiKey.startWith('sk-')) {
       toast.error(t('settings.apiKeyFormatError') || 'API Key包含非法字符');
       return false;
     }

@@ -26,10 +26,12 @@ export default function HomePage() {
 
   const { complete, completion, isLoading, handleSubmit } = useCompletion({
     api: "/api/completion",
+    headers: {
+      'x-api-key': CryptoJs.AES.encrypt(deepSeekApiKey, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY).toString(),
+    },
     body: {
       language: locale,
       prompt: content,
-      key: CryptoJs.AES.encrypt(deepSeekApiKey, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY).toString(),
     },
     onResponse: (res) => {
       if (res.status === 429) {
