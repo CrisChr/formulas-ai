@@ -64,7 +64,10 @@ export default function HomePage() {
   const answer = completion;
 
   return (
-    <div className="pt-14 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    <div className="px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+      <div className="my-8">
+        <a href="https://www.producthunt.com/products/formulas-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-formulas&#0045;ai" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1004694&theme=light&t=1755059666924" alt="Formulas&#0045;AI - Generate&#0032;Excel&#0032;formulas&#0032;by&#0032;DeepSeek&#0032;AI | Product Hunt" style={{ width: '250px', height: '54px' }} width="250" height="54" /></a>
+      </div>
       <h1 className="text-3xl sm:text-4xl lg:text-6xl max-w-[708px] font-bold text-slate-900 dark:text-white text-center mb-4 sm:mb-6">
         {t('app.heading')}
       </h1>
